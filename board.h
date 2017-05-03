@@ -5,7 +5,7 @@
 
 class Board {
 public:
-	Board(int H, int W);
+	Board(int h, int w);
 	std::string toString();
 	void fillRandom();
 	void next();

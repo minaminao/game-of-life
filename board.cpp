@@ -1,7 +1,7 @@
 #include "board.h"
 #include <time.h>
 
-Board::Board(int H, int W) :kH_(H), kW_(W), board_(H, std::vector<bool>(W)) {
+Board::Board(int h, int w) :kH_(h), kW_(w), board_(h, std::vector<bool>(w)) {
 	srand(time(NULL));
 	// don't use std::random_device
 	mt_.seed(rand());
