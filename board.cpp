@@ -11,7 +11,7 @@ std::string Board::toString() {
 	std::string s;
 	for (int i = 0; i < kH_; i++) {
 		for (int j = 0; j < kW_; j++) {
-			s += board_[i][j] ? '#' : '.';
+			s += board_[i][j] ? kAlive : kDead;
 		}
 		s += '\n';
 	}

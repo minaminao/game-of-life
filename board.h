@@ -10,6 +10,7 @@ public:
 	void fillRandom();
 	void next();
 private:
+	static const char kAlive = '#', kDead = '.';
 	const int kH_, kW_;
 	std::vector<std::vector<bool>> board_, next_board_;
 	std::mt19937 mt_;
