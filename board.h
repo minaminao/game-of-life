@@ -12,7 +12,6 @@ public:
 private:
 	const int kH_, kW_;
 	std::vector<std::vector<bool>> board_, next_board_;
-	std::random_device rd_;
 	std::mt19937 mt_;
 	int countNeighbors(int i, int j);
 	bool inRange(int i, int j);

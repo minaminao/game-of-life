@@ -1,6 +1,11 @@
 #include "board.h"
+#include <time.h>
 
-Board::Board(int H, int W) :kH_(H), kW_(W), board_(H, std::vector<bool>(W)), mt_(rd_()) {};
+Board::Board(int H, int W) :kH_(H), kW_(W), board_(H, std::vector<bool>(W)) {
+	srand(time(NULL));
+	// don't use std::random_device
+	mt_.seed(rand());
+};
 
 std::string Board::toString() {
 	std::string s;
